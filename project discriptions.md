@@ -7,4 +7,4 @@ content:-목표물이 내려오면 목표물을 맞추어 못 내려오게 하�
         -시간이 지나면서 목표물을 없애기 어려워짐/
         -게임이 종료되면 최종 점수가 나옴//
         
-##tooksy commit 은 실제로 tkddnr33341 commit입니다. 
+##tooksy commit 중 bullet은 yerin03/ merge1,2는 tkddnr33341 commit입니다. 
