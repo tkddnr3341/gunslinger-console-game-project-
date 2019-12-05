@@ -28,7 +28,7 @@ int check(int count, int element, int num, int* p);
 int fall(int count, int* px, int* py);
 void target(int *px, int *py);
 void playgame(int *px,int *py,int *php);
-int info();
+void info();
 
 enum {
 	black,
@@ -423,22 +423,25 @@ void playgame(int *px,int *py,int *php)
 	}
 }
 
-int info()
+void info(void)
 {
-	int input;
-	system("cls");
-	printf("\n\n");
-	printf("                                  [ 조작법 ]\n\n");
-	printf("                         이동: 왼쪽-'A' 오른쪽-'D'\n");
-	printf("                              총알: 스페이스바\n\n\n\n\n\n\n");
-	printf("                   아이템을 먹으면 타겟들이 모두 사라집니다.\n");
-	printf("                         개발자: 김상욱, 김예린 이민욱\n");
-	printf("                스페이스바를 누르면 메인화면으로 이동합니다.\n");
-	input = keyControl();
-	while (input != SUBMIT)
-	{
-		input = keyControl();
-	}
-	return 0;
+        system("cls"); // 화면 모두 지우기
+        printf("\n\n\n\n\n\n\n\n\n\n");
+        printf("                                       [ 조작법 ]\n\n\n\n");
+        printf("                                  이동: ◁ : A   ▷:D \n\n\n\n ");
+        printf("                                      총알: SPACE\n\n\n\n ");
+        printf("                       아이템을 먹으면 타겟들이 모두 사라집니다.\n\n\n\n");
+        printf("                            개발자 : 김상욱  김예린  이민욱 \n\n\n\n");
+        printf("                       스페이스바를 누르면 메인화면으로 이동합니다.");
+
+
+
+        while (1) {
+                if (keyControl() == SUBMIT) {
+                        system("cls");
+                        break;
+                }
+        }
 }
+
 
