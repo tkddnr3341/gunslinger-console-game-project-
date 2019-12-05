@@ -772,7 +772,3 @@ void make_item() {
 		}
 	}
 }
-
-void bang() {
-
-}
